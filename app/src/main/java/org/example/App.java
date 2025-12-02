@@ -6,6 +6,7 @@ package org.example;
 import java.util.List;
 
 import org.example.day01.Day01;
+import org.example.day01.Day01Part2;
 import org.example.utils.Utils;
 
 public class App {
@@ -26,8 +27,10 @@ public class App {
             List<String> instructions = Utils.readResource("inputs/day1.txt");
             int result = Day01.runPartOne(instructions, 50);
             System.out.println("Result: " + result);
-        // } else if (part.equals("2")) {
-        //     Day01.runPartTwo(instructions);
+        } else if (part.equals("2")) {
+            List<String> instructions = Utils.readResource("inputs/day1.txt");
+            int result = Day01Part2.run(instructions, 50);
+            System.out.println("Result: " + result);
         }
         // TODO: Call Day01.solve(), Day02.solve(), etc. based on input
     }
