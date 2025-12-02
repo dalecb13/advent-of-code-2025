@@ -3,6 +3,10 @@
  */
 package org.example;
 
+import java.util.List;
+
+import org.example.utils.Utils;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -15,7 +19,15 @@ public class App {
         }
         
         String day = args[0];
-        System.out.println("Running Day " + day);
+        String part = args[1];
+        System.out.println("Running Day " + day + " Part " + part);
+        if (part.equals("1")) {
+            List<String> instructions = Utils.readResource("inputs/day1.txt");
+            int result = Day01.runPartOne(instructions, 50);
+            System.out.println("Result: " + result);
+        // } else if (part.equals("2")) {
+        //     Day01.runPartTwo(instructions);
+        }
         // TODO: Call Day01.solve(), Day02.solve(), etc. based on input
     }
 }
