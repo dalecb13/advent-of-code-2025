@@ -3,6 +3,7 @@ package org.example;
 import java.util.List;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.lang3.tuple.Triple;
+import org.example.day01.Day01;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
