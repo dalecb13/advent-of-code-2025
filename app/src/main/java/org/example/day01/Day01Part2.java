@@ -1,6 +1,7 @@
 package org.example.day01;
 
 import java.util.List;
+
 import org.apache.commons.lang3.tuple.Pair;
 
 public class Day01Part2 {
@@ -20,6 +21,8 @@ public class Day01Part2 {
             currentNumber--;
             if (currentNumber == -1) {
                 currentNumber = 99;
+            }
+            if (currentNumber == 0) {
                 numZeroes++;
             }
         }

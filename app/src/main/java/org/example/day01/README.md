@@ -26,3 +26,7 @@ I would also use a static variable for `numZeroes` so that I do not have to retu
 ### First Attempt
 
 I did some simple changes and I got 6504, which is too large.
+
+I even wrote a unit test that walks through the sample, and it ran successfully.
+
+However I realize I haven't considered certain edge cases, such as when the instruction is to turn the dial larger `Math.abs(100)` clicks.
